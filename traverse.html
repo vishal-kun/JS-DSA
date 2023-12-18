@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>array traversing</title>
+    <script>
+        let data = [10, 20, 30, 40, 50, 60, 70, 80];
+
+        // for(let i = 0; i<data.length; i++){
+        //     document.write(`${data[i]}<br>`);
+        // }
+
+        // let x = 3;
+        // document.write(data[3]);
+
+        function getElement(){
+            let el = document.getElementById('element').value;
+
+            if(el<data.length){
+           
+            alert(data[el])
+        } else {
+            alert('value is out of scope')
+        }
+    }
+
+    </script>
+</head>
+
+<body>
+
+    <input type="text" id="element" />
+    <button onclick="getElement()" >Get Element</button>
+
+</body>
+
+</html>
